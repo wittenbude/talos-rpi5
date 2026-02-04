@@ -23,7 +23,7 @@ jobs:
       - name: Check out submodule tags
         run: git submodule foreach --recursive 'git fetch --tags'
       - name: Setup Crane
-        uses: imjasonh/setup-crane@v0.4
+        uses: imjasonh/setup-crane@v0.5
         with:
           version: v0.20.5
       - name: Setup Docker Buildx
